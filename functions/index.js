@@ -8,6 +8,6 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
  });
 
  exports.newFunction = functions.https.onRequest((request, response) => {
-    response.send("Is this the way it works");
+    response.send("THIS Is this the way it works");
    });
   
