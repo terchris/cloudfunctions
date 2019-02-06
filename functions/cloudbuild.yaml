@@ -7,3 +7,4 @@ steps:
  - gitFunction
  - -- source=functions
  - -- trigger-http
+ - --entry-point=gitFunction
