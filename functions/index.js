@@ -10,4 +10,8 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
  exports.newFunction = functions.https.onRequest((request, response) => {
     response.send("Now. pushed to github. from there to Cloud Source Repositories");
    });
-  
+
+   
+exports.gitFunction = functions.https.onRequest((request, response) => {
+    response.send("Now. pushed to github. from there to Cloud Source Repositories");
+   });
