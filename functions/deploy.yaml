@@ -6,5 +6,5 @@ steps:
   - deploy
   - --trigger-http
   - --source=functions
-  - --entry-point=f
-  - gitFunction # Function name
+  - --entry-point=gitFunction
+  
