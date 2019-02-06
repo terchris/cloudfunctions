@@ -1,0 +1,11 @@
+deploy.yaml
+steps:
+- name: gcr.io/cloud-builders/gcloud
+  args:
+  - beta
+  - functions
+  - deploy
+  - --trigger-http
+  - --source=.
+  - --entry-point=f
+  - gitFunction # Function name
