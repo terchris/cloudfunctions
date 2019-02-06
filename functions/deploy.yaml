@@ -4,6 +4,7 @@ steps:
   - beta
   - functions
   - deploy
+  - gitFunction
   - --trigger-http
   - --source=functions
   - --entry-point=gitFunction
