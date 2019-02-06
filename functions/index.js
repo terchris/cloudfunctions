@@ -13,5 +13,5 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
 
    
 exports.gitFunction = functions.https.onRequest((request, response) => {
-    response.send("Now. pushed to github. from there to Cloud Source Repositories");
+    response.send("YEY. Maintained in vscode, pushed to github, mirrored to goole repository, deployed to cloud functions");
    });
