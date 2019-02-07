@@ -13,5 +13,6 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
 
    
 exports.gitFunction = functions.https.onRequest((request, response) => {
-    response.send("AUTOMATIC !!. Maintained in vscode, pushed to github, mirrored to goole repository, deployed to cloud functions");
+    var text = "Hello";
+    response.send(text + " Debugging locally !!. Maintained in vscode, pushed to github, mirrored to goole repository, deployed to cloud functions");
    });
