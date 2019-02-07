@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "node",
+            "request": "launch",
+            "name": "readenv",
+            "program": "${workspaceFolder}/functions/readenv.js"
+        },
+        {
+            "type": "node",
             "request": "attach",
             "name": "Local functions debug",
             "port": 5858

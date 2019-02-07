@@ -15,6 +15,8 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
 exports.gitFunction = functions.https.onRequest((request, response) => {
     var text = "Hello!!! ";
     var text_from_env = process.env.HELLO_TXT;
-    text = text + "From .env: " + text_from_env+ " :";
-    response.send(text + " Debugging locally !!. Maintained in vscode, pushed to github, mirrored to goole repository, deployed to cloud functions");
+    var home = process.env.HOME;
+    var env_vars = (JSON.stringify(process.env));
+    text = text + "process.env.HELLO_TXT: (" + text_from_env+ ") : Home is : (" + home +") ALL env is : " + env_vars;
+    response.send(text + " Testing env");
    });
