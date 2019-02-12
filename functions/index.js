@@ -34,7 +34,7 @@ exports.gitFunction = functions.https.onRequest((request, response) => {
    });
 
 
-   var text = "Hello!!! ";
+   var text = "Hello logging!!! ";
    //var text_from_env = process.env.HELLO_TXT;
    // Must be set first using: 
    // firebase functions:config:set myvariables.myvalue=jalla
@@ -47,5 +47,5 @@ exports.gitFunction = functions.https.onRequest((request, response) => {
    // Writes some log entries
    logger.error('myvariables.myvalue: ' + text_from_env);
    logger.info('all env vars: ' + env_vars);
-   response.send(text + " logging 1");
+   response.send(text + " logging 2");
 });
