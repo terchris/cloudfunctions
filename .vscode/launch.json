@@ -15,6 +15,12 @@
             "request": "attach",
             "name": "Local functions debug",
             "port": 5858
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "logging",
+            "program": "${workspaceFolder}/functions/logging.js"
         }
     ]
 }
